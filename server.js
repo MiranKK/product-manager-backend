@@ -5,6 +5,8 @@ const app=express();
 const authRoute=require("./routes/auth")
 const productRoute=require("./routes/product")
 const port=process.env.PORT;
+const cors = require('cors');
+app.use(cors());
 app.use(express.json());
 
 
